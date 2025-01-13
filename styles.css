@@ -1,0 +1,103 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ranking-table th, .ranking-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.ranking-table th {
+    background-color: #f4f4f4;
+}
+
+#rankingTable {
+    display: none; /* Ẩn bảng xếp hạng mặc định */
+}
+button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.fixed-container {
+    position: fixed; /* Cố định vị trí */
+    bottom: 20px; /* Cách cạnh dưới 20px */
+    right: 20px; /* Cách cạnh phải 20px */
+    width: 1225px; /* Chiều rộng iframe */
+    height: 625px; /* Chiều cao iframe */
+    border: 1px solid #ccc; /* Viền khung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng */
+    background: #fff; /* Nền trắng */
+    z-index: 1000; /* Ưu tiên hiển thị trên các phần khác */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Loại bỏ viền iframe */
+}

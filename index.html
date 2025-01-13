@@ -1,0 +1,78 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>    
+    <div class="fixed-container">
+        <iframe src="https://docs.google.com/spreadsheets/d/1HM45f5H1Z4aYbYzS1JwmE-dh5uRS4_Keq2kLU1y_Ib4/edit?gid=0#gid=0" 
+                width="100%" height="600" frameborder="0">
+        </iframe>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Your Logo" style="height: 50px;">
+        </div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#" id="showRankLink">Rank</a>
+            <a href="#">Các tổ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" id="showRankSidebar">Rank</a></li>
+                <a href="#" id="groupLink">Các tổ</a>
+                <li><a href="#" id="blacklistLink">Black list</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="content-box" id="mainContent">
+                <!-- Nội dung chính hiển thị ở đây -->
+                <table class="ranking-table" id="rankingTable">
+                    <thead>
+                        <tr>
+                            <th>Bảng xếp hạng</th>
+                            <th>Tổ 1</th>
+                            <th>Tổ 2</th>
+                            <th>Tổ 3</th>
+                            <th>Tổ 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Điểm trừ</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Điểm cộng</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tổng</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
